@@ -1,0 +1,75 @@
+.DadJoke {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-grow: 4;
+    border-bottom: 1px solid;
+    border-color: grey;
+}
+
+.Evaluation{
+    margin-right: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 0;
+    flex-shrink: 0;
+    margin-left: 1em;
+}
+
+.Evaluation span{
+    margin: 10px;
+}
+
+.fas {
+    font-size: 1.5rem;
+}
+
+.Qualification {
+    border: 3px solid;
+    text-align: center;
+    border-color: rgb(139, 135, 139);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.Emoji {
+    text-align: right;
+    font-size: 4rem;
+    border: 0 solid;
+    border-radius: 50%;
+    background: none;
+}
+
+.Emoji:hover {
+    animation: tilt-n-move-shaking 0.3s linear infinite;
+}
+
+.Text-Container {
+    text-align: left;
+    flex-shrink: 3;
+}
+
+.Text {
+    font-family: 'Heebo', sans-serif;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }

@@ -1,0 +1,127 @@
+.Jokes {
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    margin-top: auto;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.Menu {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    padding: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.432);
+    background: repeating-linear-gradient( 45deg, #D1B7DD, #D1B7DD 20px, #D1B7DD 20px, #D1B7DD 100px );
+    z-index: 2;
+    flex-grow: 0;
+}
+
+h1{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.6rem;
+    font-style:normal;
+    z-index: 2;
+}
+
+.Menu-Emoji {
+    font-size: 10em;
+    margin-top: 60px;
+    z-index: 2;
+}
+
+.Menu-Emoji:hover {
+  animation: tilt-n-move-shaking 0.3s linear infinite;
+}
+
+/* CSS */
+.button {
+  font-size: 1.5rem;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 700;
+  margin: 2rem;
+  border: none;
+  word-spacing: 0.2rem;
+  cursor: pointer;
+  transition: 0.8s cubic-bezier(0.2, 1, 0.2, 1);
+  outline: none;
+  background: linear-gradient(
+    135deg,
+    rgba(179, 229, 252, 1) 0%,
+    rgba(179, 229, 252, 1) 50%,
+    rgba(240, 98, 146, 1) 50%,
+    rgba(240, 98, 146, 1) 100%
+  );
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.title{
+  font-family: 'Indie Flower', cursive;
+}
+
+.List {
+    text-align: start;
+    flex-grow: 1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.233);
+    z-index: 1;
+    height: 95%;
+    align-self: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.Loader{
+  animation: spin 3s linear infinite;
+  z-index: 5;
+}
+
+.Loader h1{
+  color: white;
+  font-size: 50px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.Loader span{
+  font-size: 20em;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
